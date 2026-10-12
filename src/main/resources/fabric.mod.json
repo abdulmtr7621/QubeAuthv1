@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "qubeauth",
+  "version": "${version}",
+  "name": "Qubeauth",
+  "description": "Server-side registration and authentication for offline-mode Fabric servers.",
+  "environment": "server",
+  "entrypoints": { "main": ["dev.qube.qubeauth.Qubeauth"] },
+  "mixins": ["qubeauth.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
